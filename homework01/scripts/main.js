@@ -11,7 +11,7 @@ const initX = gameWindowWidth/2;
 const initY = gameWindowWidth/2;
 const baseLen = 10;
 const diff = 20;
-let fps = 6;
+let fps = 15;
 let sampleTime = 8;
 let start = 0;
 let score = 0;
@@ -47,7 +47,7 @@ let classifier;
 let audio_classifier;
 // Model URL
 let imageModelURL = './my_model/';
-let soundModel = 'https://dinomax00.github.io/homework01/my_audio_model/';
+let soundModel = 'http://localhost:63342/homework01/my_audio_model/';
 // let soundModel = 'https://teachablemachine.withgoogle.com/models/7OxN2ehlO/';
 
 // Video
@@ -359,7 +359,7 @@ $("#mode1").click(()=>{
     swal("Mode Changed", "Keyboard Control", "success");
     controlMode = "keyboard";
     restartFlg = true;
-    fps = 10;
+    fps = 15;
 });
 
 $("#mode2").click(()=>{
@@ -367,8 +367,8 @@ $("#mode2").click(()=>{
     swal("Mode Changed", "Gesture Control", "success");
     controlMode = "gesture";
     restartFlg = true;
-    sampleTime = 15;
-    fps = 5;
+    sampleTime = 4;
+    fps = 8;
 });
 
 $("#mode3").click(()=>{
