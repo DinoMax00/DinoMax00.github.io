@@ -47,8 +47,8 @@ let classifier;
 let audio_classifier;
 // Model URL
 let imageModelURL = './my_model/';
-let soundModel = 'http://localhost:63342/homework01/my_audio_model/';
-// let soundModel = 'https://teachablemachine.withgoogle.com/models/7OxN2ehlO/';
+let soundModel = 'https://dinomax00.github.io/homework01/my-audio-model/';
+// let soundModel = 'https://teachablemachine.withgoogle.com/models/eZYGQrYnj/';
 
 // Video
 let video;
@@ -133,7 +133,8 @@ function gotResult(error, results) {
     classifyVideo();
     if(controlMode!=="gesture") return;
     label = results[0].label;
-    countDirection(label);
+    if(results[0].confidence>0.8)
+        countDirection(label);
 }
 
 // The model recognizing a sound will trigger this event
@@ -367,7 +368,7 @@ $("#mode2").click(()=>{
     swal("Mode Changed", "Gesture Control", "success");
     controlMode = "gesture";
     restartFlg = true;
-    sampleTime = 4;
+    sampleTime = 10;
     fps = 8;
 });
 
