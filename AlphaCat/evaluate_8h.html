@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AlphaCat: src/evaluate.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">AlphaCat
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">evaluate.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>估值函数头文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="board_8h_source.html">board.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="move_8h_source.html">move.h</a>&quot;</code><br />
+</div>
+<p><a href="evaluate_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad6cd38302b28d7a93c61e1db54c9b26e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluate_8h.html#ad6cd38302b28d7a93c61e1db54c9b26e">evaluate::updBoardValue</a> (<a class="el" href="class_board.html">Board</a> &amp;gameBoard)</td></tr>
+<tr class="memdesc:ad6cd38302b28d7a93c61e1db54c9b26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">对整个棋盘的棋力进行评估  <a href="evaluate_8h.html#ad6cd38302b28d7a93c61e1db54c9b26e">更多...</a><br /></td></tr>
+<tr class="separator:ad6cd38302b28d7a93c61e1db54c9b26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2466ce536fa0a331556178c2649f0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluate_8h.html#a9c2466ce536fa0a331556178c2649f0e">evaluate::updMovValue</a> (<a class="el" href="class_board.html">Board</a> &amp;gameBoard, <a class="el" href="class_move.html">Move</a> &amp;move)</td></tr>
+<tr class="memdesc:a9c2466ce536fa0a331556178c2649f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">对棋盘的一次走子进行估值更新 应当在棋子实际更新前调用该函数  <a href="evaluate_8h.html#a9c2466ce536fa0a331556178c2649f0e">更多...</a><br /></td></tr>
+<tr class="separator:a9c2466ce536fa0a331556178c2649f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00b28a4cacfc169ac8e87cd15bf8a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="evaluate_8h.html#af00b28a4cacfc169ac8e87cd15bf8a68">evaluate::deleteMovValue</a> (<a class="el" href="class_board.html">Board</a> &amp;gameBoard, <a class="el" href="class_move.html">Move</a> &amp;mov)</td></tr>
+<tr class="memdesc:af00b28a4cacfc169ac8e87cd15bf8a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">对棋盘的一次走子撤回进行估值更新 应当在棋子实际更新前调用该函数  <a href="evaluate_8h.html#af00b28a4cacfc169ac8e87cd15bf8a68">更多...</a><br /></td></tr>
+<tr class="separator:af00b28a4cacfc169ac8e87cd15bf8a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>估值函数头文件 </p>
+<dl class="section author"><dt>作者</dt><dd>AlphaCat </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>March 2021 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="af00b28a4cacfc169ac8e87cd15bf8a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00b28a4cacfc169ac8e87cd15bf8a68">&#9670;&nbsp;</a></span>deleteMovValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void evaluate::deleteMovValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
+          <td class="paramname"><em>gameBoard</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_move.html">Move</a> &amp;&#160;</td>
+          <td class="paramname"><em>mov</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>对棋盘的一次走子撤回进行估值更新 应当在棋子实际更新前调用该函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameBoard</td><td>棋盘引用 </td></tr>
+    <tr><td class="paramname">move</td><td>走子 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad6cd38302b28d7a93c61e1db54c9b26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6cd38302b28d7a93c61e1db54c9b26e">&#9670;&nbsp;</a></span>updBoardValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void evaluate::updBoardValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
+          <td class="paramname"><em>gameBoard</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>对整个棋盘的棋力进行评估 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameBoard</td><td>棋盘引用 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c2466ce536fa0a331556178c2649f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c2466ce536fa0a331556178c2649f0e">&#9670;&nbsp;</a></span>updMovValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void evaluate::updMovValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
+          <td class="paramname"><em>gameBoard</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_move.html">Move</a> &amp;&#160;</td>
+          <td class="paramname"><em>move</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>对棋盘的一次走子进行估值更新 应当在棋子实际更新前调用该函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameBoard</td><td>棋盘引用 </td></tr>
+    <tr><td class="paramname">move</td><td>走子 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

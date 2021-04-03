@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AlphaCat: Mcts类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">AlphaCat
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_mcts-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Mcts类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>封装了蒙特卡洛树搜索方法  
+ <a href="class_mcts.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mcts_8h_source.html">mcts.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3905191194f0cbac1fde66d720271228"><td class="memItemLeft" align="right" valign="top"><a id="a3905191194f0cbac1fde66d720271228"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mcts</b> (<a class="el" href="class_board.html">Board</a> *)</td></tr>
+<tr class="separator:a3905191194f0cbac1fde66d720271228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21263e0e7915d56c777b639c4e2ce1bd"><td class="memItemLeft" align="right" valign="top"><a id="a21263e0e7915d56c777b639c4e2ce1bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>selectionOfTry</b> ()</td></tr>
+<tr class="separator:a21263e0e7915d56c777b639c4e2ce1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e2beedb8dd08a30d075d6288592eb0"><td class="memItemLeft" align="right" valign="top"><a id="a47e2beedb8dd08a30d075d6288592eb0"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBestMoveString</b> ()</td></tr>
+<tr class="separator:a47e2beedb8dd08a30d075d6288592eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d9c6f8641fd5ddc9727e56116f9b00"><td class="memItemLeft" align="right" valign="top"><a id="a86d9c6f8641fd5ddc9727e56116f9b00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printFormctsDebug</b> ()</td></tr>
+<tr class="separator:a86d9c6f8641fd5ddc9727e56116f9b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dfdf59e4a2d72b6abb61afdd7af70f"><td class="memItemLeft" align="right" valign="top"><a id="aa0dfdf59e4a2d72b6abb61afdd7af70f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printFormctsDebug2</b> ()</td></tr>
+<tr class="separator:aa0dfdf59e4a2d72b6abb61afdd7af70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d426805acab7e4eb4496d27a464760"><td class="memItemLeft" align="right" valign="top"><a id="a00d426805acab7e4eb4496d27a464760"></a>
+<a class="el" href="class_mcts.html">Mcts</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>new_world</b> (<a class="el" href="class_board.html">Board</a> *)</td></tr>
+<tr class="separator:a00d426805acab7e4eb4496d27a464760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a04f2171535751d42add4ac7cc97be2e2"><td class="memItemLeft" align="right" valign="top"><a id="a04f2171535751d42add4ac7cc97be2e2"></a>
+<a class="el" href="class_board.html">Board</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a04f2171535751d42add4ac7cc97be2e2">situation</a></td></tr>
+<tr class="memdesc:a04f2171535751d42add4ac7cc97be2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">记录对应的棋盘 <br /></td></tr>
+<tr class="separator:a04f2171535751d42add4ac7cc97be2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75183c8795618afd50910f95209459b"><td class="memItemLeft" align="right" valign="top"><a id="ae75183c8795618afd50910f95209459b"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#ae75183c8795618afd50910f95209459b">win_times</a></td></tr>
+<tr class="memdesc:ae75183c8795618afd50910f95209459b"><td class="mdescLeft">&#160;</td><td class="mdescRight">记录对应点下胜利次数 <br /></td></tr>
+<tr class="separator:ae75183c8795618afd50910f95209459b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577487465f1e249ad483ace2587b9dae"><td class="memItemLeft" align="right" valign="top"><a id="a577487465f1e249ad483ace2587b9dae"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a577487465f1e249ad483ace2587b9dae">all_times</a></td></tr>
+<tr class="memdesc:a577487465f1e249ad483ace2587b9dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">记录对应点下模拟总次数 <br /></td></tr>
+<tr class="separator:a577487465f1e249ad483ace2587b9dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a09d3eddb51b842570cfa0522a3f035"><td class="memItemLeft" align="right" valign="top"><a id="a6a09d3eddb51b842570cfa0522a3f035"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a6a09d3eddb51b842570cfa0522a3f035">p_of_win</a></td></tr>
+<tr class="memdesc:a6a09d3eddb51b842570cfa0522a3f035"><td class="mdescLeft">&#160;</td><td class="mdescRight">用估值函数算出来的胜率 <br /></td></tr>
+<tr class="separator:a6a09d3eddb51b842570cfa0522a3f035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599468772ec1aaf6ea31c0e6c9907406"><td class="memItemLeft" align="right" valign="top"><a id="a599468772ec1aaf6ea31c0e6c9907406"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a599468772ec1aaf6ea31c0e6c9907406">point_all</a></td></tr>
+<tr class="memdesc:a599468772ec1aaf6ea31c0e6c9907406"><td class="mdescLeft">&#160;</td><td class="mdescRight">用子结点胜率的和 <br /></td></tr>
+<tr class="separator:a599468772ec1aaf6ea31c0e6c9907406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e743a8473447fd6b866470ae9f58fd4"><td class="memItemLeft" align="right" valign="top"><a id="a0e743a8473447fd6b866470ae9f58fd4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a0e743a8473447fd6b866470ae9f58fd4">is_over</a></td></tr>
+<tr class="memdesc:a0e743a8473447fd6b866470ae9f58fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个点的胜率是否已经确定 <br /></td></tr>
+<tr class="separator:a0e743a8473447fd6b866470ae9f58fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372e46a1445626f44d8da33b1ce52b92"><td class="memItemLeft" align="right" valign="top"><a id="a372e46a1445626f44d8da33b1ce52b92"></a>
+<a class="el" href="class_mcts.html">Mcts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a372e46a1445626f44d8da33b1ce52b92">initial_mcts</a></td></tr>
+<tr class="memdesc:a372e46a1445626f44d8da33b1ce52b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">指向模拟开始的根节点 <br /></td></tr>
+<tr class="separator:a372e46a1445626f44d8da33b1ce52b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a17b6fee720df7e8635d731ccac1d87"><td class="memItemLeft" align="right" valign="top"><a id="a5a17b6fee720df7e8635d731ccac1d87"></a>
+<a class="el" href="class_mcts.html">Mcts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a5a17b6fee720df7e8635d731ccac1d87">father</a></td></tr>
+<tr class="memdesc:a5a17b6fee720df7e8635d731ccac1d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">指向这个结点的父亲 <br /></td></tr>
+<tr class="separator:a5a17b6fee720df7e8635d731ccac1d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c46f28b2334e47d7a077194e6b69978"><td class="memItemLeft" align="right" valign="top"><a id="a1c46f28b2334e47d7a077194e6b69978"></a>
+<a class="el" href="class_mcts.html">Mcts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a1c46f28b2334e47d7a077194e6b69978">best_move_after</a></td></tr>
+<tr class="memdesc:a1c46f28b2334e47d7a077194e6b69978"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果这个点的移动确定了，指向最好的下一步 <br /></td></tr>
+<tr class="separator:a1c46f28b2334e47d7a077194e6b69978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99971207083f67534071717cb406b73"><td class="memItemLeft" align="right" valign="top"><a id="aa99971207083f67534071717cb406b73"></a>
+<a class="el" href="class_move.html">Move</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#aa99971207083f67534071717cb406b73">from_move</a></td></tr>
+<tr class="memdesc:aa99971207083f67534071717cb406b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">上一个局面到现在局面的Move <br /></td></tr>
+<tr class="separator:aa99971207083f67534071717cb406b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f20366804a24c42696b540e00c9276"><td class="memItemLeft" align="right" valign="top"><a id="a75f20366804a24c42696b540e00c9276"></a>
+std::vector&lt; <a class="el" href="class_mcts.html">Mcts</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mcts.html#a75f20366804a24c42696b540e00c9276">tryed_choices</a></td></tr>
+<tr class="memdesc:a75f20366804a24c42696b540e00c9276"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前局面所有展开的子局面 <br /></td></tr>
+<tr class="separator:a75f20366804a24c42696b540e00c9276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>封装了蒙特卡洛树搜索方法 </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>src/<a class="el" href="mcts_8h_source.html">mcts.h</a></li>
+<li>src/<a class="el" href="mcts_8cpp.html">mcts.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

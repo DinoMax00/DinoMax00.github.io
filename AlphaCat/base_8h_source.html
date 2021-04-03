@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AlphaCat: src/base.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">AlphaCat
+   &#160;<span id="projectnumber">0.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">base.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="base_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BASE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BASE_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="base_8h.html#a24f997ecf00ca0bcc823729a7057a342">   13</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="base_8h.html#a24f997ecf00ca0bcc823729a7057a342">Chess</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    EMPTY = 0,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    BOUNDARY = 255,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    R_JU = 1, B_JU = 101,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    R_MA = 2, B_MA = 102,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    R_XIANG = 3, B_XIANG = 103,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    R_SHI = 4, B_SHI = 104,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    R_JIANG = 5, B_JIANG = 105,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    R_PAO = 6, B_PAO = 106,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    R_BING = 7, B_BING = 107</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="base_8h.html#aff530c37cfc7bd840c1e6ba44fbdfe87">   27</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#aff530c37cfc7bd840c1e6ba44fbdfe87">MA_Feasible</a>[8] = { 0x21,0x1f,0x12,0x0e,-0x21,-0x1f,-0x12,-0x0e };</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="base_8h.html#a67cbce8882df06e18c248025231926de">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#a67cbce8882df06e18c248025231926de">MA_Leg</a>[8] = { 0x10,0x10,0x01,-0x01,-0x10,-0x10,-0x01,0x01 };</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="base_8h.html#a53c1efa4be5e89fd5911384e03528f5d">   31</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#a53c1efa4be5e89fd5911384e03528f5d">XIANG_Feasible</a>[4] = { 0x22,0x1e,-0x22,-0x1e };</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="base_8h.html#a22304c6ade237f79622cd715dbd8e911">   33</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#a22304c6ade237f79622cd715dbd8e911">SHI_Feasible</a>[4] = { 0x11,0x0f,-0x11,-0x0f };</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="base_8h.html#a840cca42b952657a3f30217ac6e0e1df">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#a840cca42b952657a3f30217ac6e0e1df">JIANG_Feasible</a>[4] = { 0x10,0x01,-0x10,-0x01 };</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="base_8h.html#a1a298ae5b19c3651f71362770dd62323">   37</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#a1a298ae5b19c3651f71362770dd62323">BING_R_Feasible</a>[3] = { 0x01,-0x01,-0x10 };</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="base_8h.html#ab769b28c1891b269bc2b6cf29c9ac98f">   39</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#ab769b28c1891b269bc2b6cf29c9ac98f">BING_B_Feasible</a>[3] = { 0x01,-0x01,0x10 };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="base_8h.html#aabbfc38482b5b25bf49fbf74012a01c8">   42</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="base_8h.html#aabbfc38482b5b25bf49fbf74012a01c8">GameStatus</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;constexpr <span class="keyword">auto</span> WIN = 1;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;constexpr <span class="keyword">auto</span> LOSS = -1;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;constexpr <span class="keyword">auto</span> TIE = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="base_8h.html#a6e79e6d1150bb99fbc7ff4a792ec501f">   48</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="base_8h.html#a6e79e6d1150bb99fbc7ff4a792ec501f">player_type</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="base_8h.html#a71323cb4dce6f89b238d6bfab641a3ab">   49</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="base_8h.html#a71323cb4dce6f89b238d6bfab641a3ab">RED_PLAYER</a> = 1; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="base_8h.html#a951a3cfd46d0815973727f57b31c06ba">   50</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="base_8h.html#a951a3cfd46d0815973727f57b31c06ba">BLACK_PLAYER</a> = 0; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="base_8h.html#aee44f36920b0f976c7c0aea358799867">   53</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="base_8h.html#aee44f36920b0f976c7c0aea358799867">MAX_MOVES</a> = 80;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abase_8h_html_a1a298ae5b19c3651f71362770dd62323"><div class="ttname"><a href="base_8h.html#a1a298ae5b19c3651f71362770dd62323">BING_R_Feasible</a></div><div class="ttdeci">const int BING_R_Feasible[3]</div><div class="ttdoc">兵移动位置</div><div class="ttdef"><b>Definition:</b> base.h:37</div></div>
+<div class="ttc" id="abase_8h_html_a22304c6ade237f79622cd715dbd8e911"><div class="ttname"><a href="base_8h.html#a22304c6ade237f79622cd715dbd8e911">SHI_Feasible</a></div><div class="ttdeci">const int SHI_Feasible[4]</div><div class="ttdoc">士移动位置</div><div class="ttdef"><b>Definition:</b> base.h:33</div></div>
+<div class="ttc" id="abase_8h_html_a24f997ecf00ca0bcc823729a7057a342"><div class="ttname"><a href="base_8h.html#a24f997ecf00ca0bcc823729a7057a342">Chess</a></div><div class="ttdeci">Chess</div><div class="ttdoc">棋子类型</div><div class="ttdef"><b>Definition:</b> base.h:14</div></div>
+<div class="ttc" id="abase_8h_html_a53c1efa4be5e89fd5911384e03528f5d"><div class="ttname"><a href="base_8h.html#a53c1efa4be5e89fd5911384e03528f5d">XIANG_Feasible</a></div><div class="ttdeci">const int XIANG_Feasible[4]</div><div class="ttdoc">相移动位置</div><div class="ttdef"><b>Definition:</b> base.h:31</div></div>
+<div class="ttc" id="abase_8h_html_a67cbce8882df06e18c248025231926de"><div class="ttname"><a href="base_8h.html#a67cbce8882df06e18c248025231926de">MA_Leg</a></div><div class="ttdeci">const int MA_Leg[8]</div><div class="ttdoc">马别腿位置</div><div class="ttdef"><b>Definition:</b> base.h:29</div></div>
+<div class="ttc" id="abase_8h_html_a6e79e6d1150bb99fbc7ff4a792ec501f"><div class="ttname"><a href="base_8h.html#a6e79e6d1150bb99fbc7ff4a792ec501f">player_type</a></div><div class="ttdeci">bool player_type</div><div class="ttdoc">当前执子</div><div class="ttdef"><b>Definition:</b> base.h:48</div></div>
+<div class="ttc" id="abase_8h_html_a71323cb4dce6f89b238d6bfab641a3ab"><div class="ttname"><a href="base_8h.html#a71323cb4dce6f89b238d6bfab641a3ab">RED_PLAYER</a></div><div class="ttdeci">constexpr auto RED_PLAYER</div><div class="ttdoc">红棋</div><div class="ttdef"><b>Definition:</b> base.h:49</div></div>
+<div class="ttc" id="abase_8h_html_a840cca42b952657a3f30217ac6e0e1df"><div class="ttname"><a href="base_8h.html#a840cca42b952657a3f30217ac6e0e1df">JIANG_Feasible</a></div><div class="ttdeci">const int JIANG_Feasible[4]</div><div class="ttdoc">将移动位置</div><div class="ttdef"><b>Definition:</b> base.h:35</div></div>
+<div class="ttc" id="abase_8h_html_a951a3cfd46d0815973727f57b31c06ba"><div class="ttname"><a href="base_8h.html#a951a3cfd46d0815973727f57b31c06ba">BLACK_PLAYER</a></div><div class="ttdeci">constexpr auto BLACK_PLAYER</div><div class="ttdoc">黑棋</div><div class="ttdef"><b>Definition:</b> base.h:50</div></div>
+<div class="ttc" id="abase_8h_html_aabbfc38482b5b25bf49fbf74012a01c8"><div class="ttname"><a href="base_8h.html#aabbfc38482b5b25bf49fbf74012a01c8">GameStatus</a></div><div class="ttdeci">int GameStatus</div><div class="ttdoc">游戏结果，用于随机快速走子函数</div><div class="ttdef"><b>Definition:</b> base.h:42</div></div>
+<div class="ttc" id="abase_8h_html_ab769b28c1891b269bc2b6cf29c9ac98f"><div class="ttname"><a href="base_8h.html#ab769b28c1891b269bc2b6cf29c9ac98f">BING_B_Feasible</a></div><div class="ttdeci">const int BING_B_Feasible[3]</div><div class="ttdoc">卒移动位置</div><div class="ttdef"><b>Definition:</b> base.h:39</div></div>
+<div class="ttc" id="abase_8h_html_aee44f36920b0f976c7c0aea358799867"><div class="ttname"><a href="base_8h.html#aee44f36920b0f976c7c0aea358799867">MAX_MOVES</a></div><div class="ttdeci">constexpr auto MAX_MOVES</div><div class="ttdoc">一回合中预期最大走子方法数</div><div class="ttdef"><b>Definition:</b> base.h:53</div></div>
+<div class="ttc" id="abase_8h_html_aff530c37cfc7bd840c1e6ba44fbdfe87"><div class="ttname"><a href="base_8h.html#aff530c37cfc7bd840c1e6ba44fbdfe87">MA_Feasible</a></div><div class="ttdeci">const int MA_Feasible[8]</div><div class="ttdoc">马移动位置</div><div class="ttdef"><b>Definition:</b> base.h:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
