@@ -1,0 +1,113 @@
+body{
+    background-color: #f7f1e3;
+}
+
+main{
+    background-color: #f7f1e3;
+}
+
+.mainWindow{
+    border-radius: 25px;
+    width: 500px;
+    height: 600px;
+}
+
+.gameWindow{
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    width:402px;
+    height: 402px;
+    margin: auto;
+}
+
+.block{
+    line-height: 100px;
+    border-radius: 15px;
+    background-color: #f5cd79;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: 70px;
+    position: absolute;
+}
+
+.btnGroup{
+    display: flex;
+    justify-content: space-around;
+}
+
+.playBtn{
+    font-size: 40px;
+}
+
+.sideBar{
+    border-radius: 20px;
+    position: absolute;
+    float: left;
+    width: 250px;
+    height: 600px;
+    background-color: #c8d6e5;
+}
+
+.panel {
+    width: 250px;
+    height: 600px;
+    left: 20px;
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+.ui_head{
+    border-radius: 10px;
+    width: 100%;
+    height: 32px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.algorithm{
+    padding: 5px;
+    font-size: 20px;
+    margin: 2px 15px;
+}
+
+.ui{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header_title {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-top: -10px;
+}
+
+.result{
+    font-size: 17px;
+}
+
+#leftWindow {
+    margin-left: 23%;
+    background-color: #A5DC86;
+    float: left;
+}
+
+#rightWindow{
+    margin-right: 8%;
+    background-color: #5dc2f1;
+    float: right;
+}
+
+
+

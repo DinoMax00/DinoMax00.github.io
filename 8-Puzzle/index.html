@@ -1,1 +1,136 @@
-nothing
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>8-Puzzle</title>
+    <link href="resources/favicon.png" rel="icon">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/sweetalert.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <script src="scripts/lib/jquery-3.5.1.js"></script>
+    <script src="scripts/lib/sweetalert-dev.js"></script>
+    <script src="scripts/lib/jquery.mousewheel.js"></script>
+    <script src="scripts/lib/FastPriorityQueue.js"></script>
+</head>
+<body>
+<main>
+    <h1 id = "title" style="margin-left: 50%">🎲 8-Puzzle 🎲</h1>
+    <div>
+    <div class="panel">
+        <header>
+            <h2 class="header_title" style="color: white">Select Algorithm</h2>
+        </header>
+        <hr>
+        <div class="ui" style="height: 45%">
+            <div class="ui_head">👾 Method</div>
+            <div class="algorithm">
+                <input type="radio" name="algorithm" value="A*" checked>
+                <a>A*</a>
+                <br>
+                <input type="radio" name="algorithm" value="IDA*">
+                <a>IDA*</a>
+                <br>
+            </div>
+            <div class="ui_head">🤖 Heuristic</div>
+            <div class="algorithm">
+                <input type="radio" name="heuristic" value="zero">
+                <a>Zero</a>
+                <br>
+                <input type="radio" name="heuristic" value="difference">
+                <a>Difference</a>
+                <br>
+                <input type="radio" name="heuristic" value="manhattan" checked>
+                <a>Manhattan</a>
+                <br>
+                <input type="radio" name="heuristic" value="fast">
+                <a>Fast Sol</a>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div class="ui" style="height: 43%">
+            <div class="ui_head">👻 Result</div>
+            <div class="result">
+                <br>
+                <a><b>Run Time : </b></a><a id="time">0</a>ms
+                <br>
+                <br>
+                <a><b>Search Times : </b></a><a id="depth">0</a>
+                <br>
+                <br>
+                <a><b>Total Steps : </b></a><a id="steps">0</a>
+                <br>
+                <br>
+                <a><b>Before : </b></a><a id="before">0</a>ms
+            </div>
+        </div>
+    </div>
+    <!-- 目标窗口 -->
+    <div id="leftWindow" class="mainWindow">
+        <h1 style="text-align: center;">Target State</h1>
+        <div class="gameWindow">
+
+            <div id="tar1" class="block" style="top:5px; left:5px">1</div>
+            <div id="tar2" class="block" style="top:5px; left:110px">2</div>
+            <div id="tar3" class="block" style="top:5px; left:215px">3</div>
+            <div id="tar4" class="block" style="top:110px; left:5px">4</div>
+            <div id="tar5" class="block" style="top:110px; left:110px">5</div>
+            <div id="tar6" class="block" style="top:110px; left:215px">6</div>
+            <div id="tar7" class="block" style="top:215px; left:5px">7</div>
+            <div id="tar8" class="block" style="top:215px; left:110px">8</div>
+            <div id="tar9" class="block" style="top:215px; left:215px"></div>
+            <div id="tar10" class="block" style="top:-1000px; left:-1000px"></div>
+            <div id="tar11" class="block" style="top:-1000px; left:-1000px"></div>
+            <div id="tar12" class="block" style="top:-1000px; left:-1000px"></div>
+            <div id="tar13" class="block" style="top:-1000px; left:-1000px"></div>
+            <div id="tar14" class="block" style="top:-1000px; left:-1000px"></div>
+            <div id="tar15" class="block" style="top:-1000px; left:-1000px"></div>
+            <div id="tar16" class="block" style="top:-1000px; left:-1000px"></div>
+
+        </div>
+        <hr>
+        <a id="confirm" class="btn-gradient green large" style="margin-left: 34%">Confirm</a>
+    </div>
+    <!-- 起始窗口 -->
+    <div id="rightWindow" class="mainWindow">
+        <h1 style="text-align: center;">Start State</h1>
+        <div class="gameWindow">
+
+            <div id="src1" class="block" style="top:5px; left:5px">1</div>
+            <div id="src2" class="block" style="top:5px; left:110px">2</div>
+            <div id="src3" class="block" style="top:5px; left:215px">3</div>
+            <div id="src4" class="block" style="top:110px; left:5px">4</div>
+            <div id="src5" class="block" style="top:110px; left:110px">5</div>
+            <div id="src6" class="block" style="top:110px; left:215px">6</div>
+            <div id="src7" class="block" style="top:215px; left:5px">7</div>
+            <div id="src8" class="block" style="top:215px; left:110px">8</div>
+            <div id="src9" class="block" style="top:215px; left:215px"></div>
+            <div id="src10" class="block" style="top:-2150px; left:-2150px"></div>
+            <div id="src11" class="block" style="top:-2150px; left:-2150px"></div>
+            <div id="src12" class="block" style="top:-2150px; left:-2150px"></div>
+            <div id="src13" class="block" style="top:-2150px; left:-2150px"></div>
+            <div id="src14" class="block" style="top:-2150px; left:-2150px"></div>
+            <div id="src15" class="block" style="top:-2150px; left:-2150px"></div>
+            <div id="src16" class="block" style="top:-2150px; left:-2150px"></div>
+
+        </div>
+        <hr>
+            <div class = "btnGroup">
+            <div id="pre" class="playBtn" >⏪</div>
+            <div id="play" class="playBtn" >⏹</div>
+            <div id="next"  class="playBtn" >⏩</div>
+        </div>
+    </div>
+    </div>
+    <footer style="margin-left: 85%"><b>Designed by Dino</b></footer>
+</main>
+<script src="scripts/node.js"></script>
+<script src="scripts/Astar.js"></script>
+<script src="scripts/IDAstar.js"></script>
+<script src="scripts/config.js"></script>
+<script src="scripts/tools.js"></script>
+<script src="scripts/listeners.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
