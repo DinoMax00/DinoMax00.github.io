@@ -7,8 +7,8 @@ h1 {
 }
 
 .mainWindow {
-    height: 850px;
-    width: 1200px;
+    height: 600px;
+    width: 900px;
     margin: auto;
     border: 10px solid gray;
     border-radius: 10px;
@@ -18,7 +18,7 @@ h1 {
 
 #gameWindow {
     height: 100%;
-    width: 850px;
+    width: 600px;
     border-collapse: collapse;
     border: 10px;
     float: left;
@@ -27,19 +27,19 @@ h1 {
 #selectWindow {
     float: right;
     height: 100%;
-    width: 330px;
+    width: 260px;
     margin-right: 10px;
     border-collapse: collapse;
 }
 
 tr td {
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 .sideBar{
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 10px;
     border: 6px solid black;
@@ -48,7 +48,7 @@ tr td {
 
 p {
     font-family: KaiTi;
-    font-size: 26px;
+    font-size: 21px;
 }
 
 .sideBar:hover {
