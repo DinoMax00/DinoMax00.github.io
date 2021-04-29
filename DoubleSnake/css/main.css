@@ -1,0 +1,57 @@
+body {
+    background-color: cornsilk;
+}
+
+h1 {
+    text-align: center;
+}
+
+.mainWindow {
+    height: 850px;
+    width: 1200px;
+    margin: auto;
+    border: 10px solid gray;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-top: 50px;
+}
+
+#gameWindow {
+    height: 100%;
+    width: 850px;
+    border-collapse: collapse;
+    border: 10px;
+    float: left;
+}
+
+#selectWindow {
+    float: right;
+    height: 100%;
+    width: 330px;
+    margin-right: 10px;
+    border-collapse: collapse;
+}
+
+tr td {
+    border: 3px solid black;
+}
+
+.sideBar{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: 6px solid black;
+    border-bottom: 3px solid grey;
+}
+
+p {
+    font-family: KaiTi;
+    font-size: 26px;
+}
+
+.sideBar:hover {
+    background-color: #74b9ff;
+    color: white;
+}

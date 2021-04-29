@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/sweetalert.css" rel="stylesheet">
+    <script src="lib/jquery-3.5.1.js"></script>
+    <script src="lib/sweetalert.min.js"></script>
+    <title>Double Snake</title>
+</head>
+<body>
+    <div>
+        <div class="mainWindow">
+            <table id="gameWindow"></div>
+            <div id="selectWindow">
+                <h1>🐍Double Snake🐍</h1>
+                <hr>
+                    <p>① 玩家控制左上角黑蛇移动</p>
+                    <p>② WSAD键控制上下左右</p>
+                    <p>③ 前十回合每回合蛇变长一次，之后每三回合蛇变长一次</p>
+                    <p>④ 当蛇无路可走时，游戏结束</p>
+                    <p>⑤ 在下方窗口选择AI策略</p>
+                <hr>
+                <div id="mode1" class="sideBar">MinMax</div>
+                <div id="mode2" class="sideBar">Alpha-Beta</div>
+                <div id="mode3" class="sideBar">MCTS</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
